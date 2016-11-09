@@ -1,0 +1,135 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:126), pid=19808, tid=19160
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (8.0_25-b18) (build )
+# Java VM: Java HotSpot(TM) Client VM (25.25-b02 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x02f2c400):  JavaThread "Unknown thread" [_thread_in_vm, id=19160, stack(0x01270000,0x012c0000)]
+
+Stack: [0x01270000,0x012c0000],  sp=0x012bf2e0,  free space=316k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x19796b]
+V  [jvm.dll+0x1908e6]
+V  [jvm.dll+0x3b4e9]
+V  [jvm.dll+0x3b69e]
+V  [jvm.dll+0x4a063]
+V  [jvm.dll+0x9dc8e]
+V  [jvm.dll+0x9df52]
+V  [jvm.dll+0x145a01]
+V  [jvm.dll+0x169ab8]
+V  [jvm.dll+0xdaea1]
+C  [javaw.exe+0x13e4]
+C  [javaw.exe+0x1eb7]
+C  [javaw.exe+0xaba1]
+C  [javaw.exe+0xac2b]
+C  [KERNEL32.DLL+0x13744]
+C  [ntdll.dll+0x59cd4]
+C  [ntdll.dll+0x59c9f]
+C  0x00000000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x02f2c400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=19160, stack(0x01270000,0x012c0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.009 loading class java/lang/CharSequence done
+Event: 0.009 loading class java/lang/String done
+Event: 0.009 loading class java/lang/Class
+Event: 0.009 loading class java/lang/reflect/AnnotatedElement
+Event: 0.009 loading class java/lang/reflect/AnnotatedElement done
+Event: 0.009 loading class java/lang/reflect/GenericDeclaration
+Event: 0.009 loading class java/lang/reflect/GenericDeclaration done
+Event: 0.009 loading class java/lang/reflect/Type
+Event: 0.009 loading class java/lang/reflect/Type done
+Event: 0.010 loading class java/lang/Class done
+
+
+Dynamic libraries:
+0x012e0000 - 0x01310000 	E:\Program Files (x86)\Java\jdk1.8.0_25\bin\bin\javaw.exe
+0x778a0000 - 0x77a19000 	C:\windows\SYSTEM32\ntdll.dll
+0x76a60000 - 0x76b50000 	C:\windows\SYSTEM32\KERNEL32.DLL
+0x76b50000 - 0x76cc6000 	C:\windows\SYSTEM32\KERNELBASE.dll
+0x77460000 - 0x774db000 	C:\windows\SYSTEM32\ADVAPI32.dll
+0x76cd0000 - 0x76d8e000 	C:\windows\SYSTEM32\msvcrt.dll
+0x774e0000 - 0x77523000 	C:\windows\SYSTEM32\sechost.dll
+0x77650000 - 0x776fc000 	C:\windows\SYSTEM32\RPCRT4.dll
+0x749b0000 - 0x749ce000 	C:\windows\SYSTEM32\SspiCli.dll
+0x749a0000 - 0x749aa000 	C:\windows\SYSTEM32\CRYPTBASE.dll
+0x74940000 - 0x74999000 	C:\windows\SYSTEM32\bcryptPrimitives.dll
+0x77700000 - 0x77840000 	C:\windows\SYSTEM32\USER32.dll
+0x76060000 - 0x761ad000 	C:\windows\SYSTEM32\GDI32.dll
+0x73b60000 - 0x73d69000 	C:\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.10240.16384_none_3bccb1ff6bcd1849\COMCTL32.dll
+0x77430000 - 0x7745b000 	C:\windows\SYSTEM32\IMM32.DLL
+0x76850000 - 0x76970000 	C:\windows\SYSTEM32\MSCTF.dll
+0x648c0000 - 0x6497f000 	E:\Program Files (x86)\Java\jdk1.8.0_25\bin\bin\msvcr100.dll
+0x62940000 - 0x62ce4000 	E:\Program Files (x86)\Java\jdk1.8.0_25\bin\bin\client\jvm.dll
+0x76000000 - 0x76006000 	C:\windows\SYSTEM32\PSAPI.DLL
+0x742f0000 - 0x74314000 	C:\windows\SYSTEM32\WINMM.dll
+0x70120000 - 0x70128000 	C:\windows\SYSTEM32\WSOCK32.dll
+0x77270000 - 0x772cc000 	C:\windows\SYSTEM32\WS2_32.dll
+0x75f50000 - 0x75f57000 	C:\windows\SYSTEM32\NSI.dll
+0x01040000 - 0x01063000 	C:\windows\SYSTEM32\WINMMBASE.dll
+0x75f60000 - 0x75f96000 	C:\windows\SYSTEM32\cfgmgr32.dll
+0x73d70000 - 0x73d91000 	C:\windows\SYSTEM32\DEVOBJ.dll
+0x6bb30000 - 0x6bb3c000 	E:\Program Files (x86)\Java\jdk1.8.0_25\bin\bin\verify.dll
+0x6bb00000 - 0x6bb21000 	E:\Program Files (x86)\Java\jdk1.8.0_25\bin\bin\java.dll
+0x6bae0000 - 0x6baf3000 	E:\Program Files (x86)\Java\jdk1.8.0_25\bin\bin\zip.dll
+0x73510000 - 0x7364f000 	C:\windows\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:E:\android-sdks_4.2\android-sdks_4.2\platforms\android-17\android.jar 
+java_command: Tools.NameIDMap
+java_class_path (initial): F:\Eclipse\tiantianbao\bin\classes;F:\Eclipse\tiantianbao\libs\android-support-v4.jar;F:\Eclipse\tiantianbao\libs\gson-2.2.4.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=E:\Program Files (x86)\Java\jdk1.8.0_25
+CLASSPATH=.;E:\Program Files (x86)\Java\jdk1.8.0_25\lib\dt.jar;E:\Program Files (x86)\Java\jdk1.8.0_25\lib\tools.jar;
+PATH=E:/Program Files (x86)/Java/jdk1.8.0_25/bin/bin/client;E:/Program Files (x86)/Java/jdk1.8.0_25/bin/bin;E:/Program Files (x86)/Java/jdk1.8.0_25/bin/lib/i386;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\ProgramData\Oracle\Java\javapath;E:\Program Files (x86)\Java\jdk1.8.0_25\bin;E:\Program Files (x86)\Java\jdk1.8.0_25\jre\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;E:\MATLAB\runtime\win64;E:\MATLAB\bin;E:\MATLAB\polyspace\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;E:\New Folder;E:\eclipse-jee-juno-SR2-win32\eclipse;
+USERNAME=1499171928
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, erms, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 4060004k(732824k free), swap 7992164k(2392032k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.25-b02) for windows-x86 JRE (1.8.0_25-b18), built on Oct  7 2014 14:31:05 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Wed Jan 20 15:42:54 2016
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

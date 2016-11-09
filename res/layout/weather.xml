@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 这是一个显示 信息的 碎片 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="fill_parent"
+        android:layout_height="0pt"
+        android:layout_weight="4"
+        android:background="@drawable/bj"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!-- 刷新图片 -->
+
+            <ImageView
+                android:id="@+id/refresh"
+                android:layout_width="20pt"
+                android:layout_height="20pt"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="2pt"
+                android:background="#000000"
+                android:onClick="refresh"
+                android:src="@drawable/refresh" />
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="20pt"
+                android:layout_height="20pt"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="2pt"
+                android:background="#333333"
+                android:src="@drawable/add" />
+
+            <TextView
+                android:id="@+id/wendu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/news"
+                android:layout_toLeftOf="@+id/tianqi"
+                android:text="35°C"
+                android:textSize="25pt" />
+
+            <TextView
+                android:id="@+id/tianqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/news"
+                android:layout_alignRight="@+id/news"
+                android:text="晴"
+                android:textSize="15pt" />
+
+            <TextView
+                android:id="@+id/news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/time"
+                android:layout_alignLeft="@+id/time"
+                android:layout_margin="5dp"
+                android:text="2/17°C 西南风 4级  湿度 31% pm 149"
+                android:textSize="15pt" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:text="发布时间  今天14：34"
+                android:textSize="10pt" />
+
+            <TextView
+                android:id="@+id/ciryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/refresh"
+                android:text="哈尔滨"
+                android:textSize="20pt" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/week_news" />
+    </LinearLayout>
+
+</LinearLayout>

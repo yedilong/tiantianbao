@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 一周的信息 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="1pt"
+        android:layout_weight="1"
+        android:background="#ffcc00"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/week_1_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="15pt"
+                android:text="今天" />
+
+            <TextView
+                android:id="@+id/week_1_tinaqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="15pt"
+                android:text="晴" />
+
+            <TextView
+                android:id="@+id/week_1_wendu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+               android:textSize="10pt"
+                android:text="2/18°C" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="1pt"
+        android:layout_weight="1"
+        android:background="#ffcc00"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/week_2_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="15pt"
+                android:text="明天" />
+
+            <TextView
+                android:id="@+id/week_2_tinaqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+               android:textSize="15pt"
+                android:text="晴" />
+
+            <TextView
+                android:id="@+id/week_2_wendu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+               android:textSize="10pt"
+                android:text="2/18°C" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="1pt"
+        android:layout_weight="1"
+        android:background="#ffcc00"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/week_3_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="15pt"
+                android:text="后天" />
+
+            <TextView
+                android:id="@+id/week_3_tinaqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+               android:textSize="15pt"
+                android:text="晴" />
+
+            <TextView
+                android:id="@+id/week_3_wendu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+               android:textSize="10pt"
+                android:text="2/18°C" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="1pt"
+        android:layout_weight="1"
+        android:background="#ffcc00"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/week_4_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+              android:textSize="15pt"
+                android:text="外后天" />
+
+            <TextView
+                android:id="@+id/week_4_tinaqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+               android:textSize="15pt"
+                android:text="晴" />
+
+            <TextView
+                android:id="@+id/week_4_wendu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+              android:textSize="10pt"
+                android:text="2/18°C" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

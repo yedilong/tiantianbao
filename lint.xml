@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src/com/example/tiantianbao/CityName.java" />
+        <ignore path="src/com/example/tiantianbao/MainActivity.java" />
+        <ignore path="src/com/example/tiantianbao/Weather.java" />
+        <ignore path="src/com/example/tiantianbao/WeekNews.java" />
+    </issue>
+    <issue id="ValidFragment">
+        <ignore path="src/com/example/tiantianbao/Weather.java" />
+    </issue>
+</lint>

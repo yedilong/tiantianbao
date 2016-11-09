@@ -1,0 +1,19 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/d_layout"
+    android:layout_height="match_parent" >
+	<FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" />
+    <ListView
+        android:id="@+id/city_name"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_gravity="start" />
+
+</android.support.v4.widget.DrawerLayout>
+       
